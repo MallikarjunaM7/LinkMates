@@ -33,9 +33,9 @@ export const Edituser = () => {
                     Authorization: `Bearer ${token}`
                 }
             })
+            const allData = await response.json()
+            console.log("all",allData)
             if(response.ok){
-                const allData = await response.json()
-                console.log("all",allData)
                 setData({...data, ...allData})
                 data.oldName = allData.username
                 data.oldPhone = allData.phone
