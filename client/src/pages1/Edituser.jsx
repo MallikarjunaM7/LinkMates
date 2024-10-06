@@ -41,6 +41,7 @@ export const Edituser = () => {
                 data.oldPhone = allData.phone
                 data.oldPlace = allData.place
                 data.oldFavorite = allData.favorite
+                console.log(data)
             }
         } catch (error) {
             console.log(error)
