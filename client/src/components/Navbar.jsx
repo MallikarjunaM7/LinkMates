@@ -10,7 +10,7 @@ export const Navbar = () => {
     const [number, setNumber] = useState(0)
     const [isLoad, setIsLoad] = useState(false)
 
-    const backapi = "http://localhost:5000"
+    const backapi = "https://linkmates-backend.onrender.com"
 
     const getNumber = async() => {
         setIsLoad(true)
