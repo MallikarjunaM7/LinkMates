@@ -12,7 +12,7 @@ export const Requests = () => {
     const [frontiAmFollower, setFrontiAmFollower] = useState([])
     const [frontRequested, setFrontRequested] = useState([])
     const [frontRequest, setFrontRequest] = useState([])
-    const backapi = "http://localhost:5000"
+    const backapi = "https://linkmates-backend.onrender.com"
 
     const navigate = useNavigate()
 
