@@ -38,11 +38,13 @@ export const Edituser = () => {
             console.log("all",allData)
             if(response.ok){
                 setData({...data, ...allData})
-                data.oldName = allData.username
-                data.oldPhone = allData.phone
-                data.oldPlace = allData.place
-                data.oldFavorite = allData.favorite
-                console.log(data)
+                if(data.username){
+                    data.oldName = allData.username
+                    data.oldPhone = allData.phone
+                    data.oldPlace = allData.place
+                    data.oldFavorite = allData.favorite
+                }
+                console.log("data", data)
             }
         } catch (error) {
             console.log(error)
