@@ -37,7 +37,7 @@ export const Contact = () => {
         console.log(data)
     }, [data])
 
-    const backapi = "http://localhost:5000"
+    const backapi = "https://linkmates-backend.onrender.com"
 
     const handleSubmit = async(e) => {
         e.preventDefault()
