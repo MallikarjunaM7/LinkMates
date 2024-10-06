@@ -35,7 +35,7 @@ export const Home = () => {
             <div className="imagediv">
             <div className="left">
                 <h1 className="welcome">Welcome</h1>
-                <h2>This Website isn't responsive ....Just Under Construction But....</h2>
+                <h2>This Website isn't width/size responsive But....</h2>
                 <h2>Functions very well....Do check out all features</h2>
 
                 <h2>Its Mainly a Multi user website please create alteast two accounts to Socialize with each other</h2>
