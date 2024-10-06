@@ -37,8 +37,9 @@ export const Edituser = () => {
             const allData = await response.json()
             console.log("all",allData)
             if(response.ok){
+                console.log("Hiiiiiiii")
                 setData({...data, ...allData})
-                if(data.username){
+                if(allData.username){
                     data.oldName = allData.username
                     data.oldPhone = allData.phone
                     data.oldPlace = allData.place
