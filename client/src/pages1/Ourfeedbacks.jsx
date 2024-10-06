@@ -8,7 +8,7 @@ export const OurFeedbacks = () => {
 
     const [feedbacksstate, setFeedbacksstate] = useState([])
     const [averagerating, setAveragerating] = useState(0)
-    const backapi = "http://localhost:5000"
+    const backapi = "https://linkmates-backend.onrender.com"
 
     const getOurfeedbacks = async() => {
         try {
