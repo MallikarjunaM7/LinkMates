@@ -24,7 +24,8 @@ export const Edituser = () => {
         oldFavorite: ""
     })
 
-
+    const [tempdata, setTempdata] = useState({})
+    
     const getInfo = async() => {
         try {
             const response = await fetch(`${backapi}/api/auth/getuserbyid/${id}`, {
@@ -39,6 +40,7 @@ export const Edituser = () => {
             if(response.ok){
                 console.log("Hiiiiiiii")
                 setData({...data, ...allData})
+                setTempdata(allData)
             }
         } catch (error) {
             console.log(error)
@@ -46,14 +48,15 @@ export const Edituser = () => {
     }
 
     useEffect(() => {
-        if(data.username){
-            data.oldName = allData.username
-            data.oldPhone = allData.phone
-            data.oldPlace = allData.place
-            data.oldFavorite = allData.favorite
+        console.log(tempdata)
+        if(tempdata.username){
+            data.oldName = tempdata.username
+            data.oldPhone = tempdata.phone
+            data.oldPlace = tempdata.place
+            data.oldFavorite = tempdata.favorite
             console.log("data useeffect", data)
         }
-    }, [data.username])
+    }, [tempdata])
 
     const handleChange = (e) => {
         const {name, value} = e.target
