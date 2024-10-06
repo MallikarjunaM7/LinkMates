@@ -14,7 +14,7 @@ export const Feedback = () => {
         feedback: "",
         rating: 5
     })
-    const backapi = "http://localhost:5000"
+    const backapi = "https://linkmates-backend.onrender.com"
 
     useEffect(() => {
         if(data.username){
