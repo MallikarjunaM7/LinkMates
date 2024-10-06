@@ -27,7 +27,7 @@ export const Edituser = () => {
 
     const getInfo = async() => {
         try {
-            const response = await fetch(`${backapi}/api/auth//getuserbyid/${id}`, {
+            const response = await fetch(`${backapi}/api/auth/getuserbyid/${id}`, {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${token}`
