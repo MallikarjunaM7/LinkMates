@@ -25,7 +25,7 @@ export const Home = () => {
     console.log(data)
 
     if(isLoading){
-        return <><h1>Loading....</h1></>
+        return <><h1 className = "users">Loading....</h1></>
     }
 
 
