@@ -1,3 +1,3 @@
 export const Error = () => {
-    return(<><h2>Page Not Found</h2></>)
+    return(<><h2 className = "users">Page Not Found</h2></>)
 }
