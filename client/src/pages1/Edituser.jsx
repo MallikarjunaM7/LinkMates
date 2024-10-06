@@ -10,7 +10,7 @@ export const Edituser = () => {
     const {id} = useParams()
     const {token} = useAuth()
     const navigate = useNavigate()
-    const backapi = "http://localhost:5000"
+    const backapi = "https://linkmates-backend.onrender.com"
 
     const [data, setData] = useState({
         username: "",
