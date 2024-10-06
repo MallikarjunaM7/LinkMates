@@ -17,7 +17,7 @@ export const Search = () => {
     const [unsend, setUnsend] = useState(false)
     const [acceptedRequest, setAcceptedRequest] = useState(false)
     const navigate = useNavigate()
-    const backapi = "http://localhost:5000"
+    const backapi = "https://linkmates-backend.onrender.com"
 
     useEffect(() => {
         if(data){
