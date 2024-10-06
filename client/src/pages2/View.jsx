@@ -16,7 +16,7 @@ export const View = () => {
         Following: "",
         Followers: ""
     })
-    const backapi = "http://localhost:5000"
+    const backapi = "https://linkmates-backend.onrender.com"
 
     console.log("Hiiii")
     useEffect(() => {
