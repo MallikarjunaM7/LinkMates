@@ -39,18 +39,21 @@ export const Edituser = () => {
             if(response.ok){
                 console.log("Hiiiiiiii")
                 setData({...data, ...allData})
-                if(allData.username){
-                    data.oldName = allData.username
-                    data.oldPhone = allData.phone
-                    data.oldPlace = allData.place
-                    data.oldFavorite = allData.favorite
-                }
-                console.log("data", data)
             }
         } catch (error) {
             console.log(error)
         }
     }
+
+    useEffect(() => {
+        if(data.username){
+            data.oldName = allData.username
+            data.oldPhone = allData.phone
+            data.oldPlace = allData.place
+            data.oldFavorite = allData.favorite
+            console.log("data useeffect", data)
+        }
+    }, [data.username])
 
     const handleChange = (e) => {
         const {name, value} = e.target
