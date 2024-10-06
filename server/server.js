@@ -9,7 +9,7 @@ const cors = require("cors")
 require('dotenv').config();
 
 const corsOptions = {
-    origin: "https://linkmates.onrender.com",
+    origin: "https://linkmates-frontend.onrender.com",
     method: "GET, POST, PUT, PATCH, DELETE, HEAD",
     credentials: true,
 }
