@@ -39,7 +39,7 @@ export const OurFeedbacks = () => {
         return <Navigate to="/feedback"/>
     }
     if(feedbacksstate.length === 0){
-        return(<><h1>No Feebdacks As of Noww</h1></>)
+        return(<><h1 className = "users">No Feebdacks As of Now</h1></>)
     }
     return(
         <>
