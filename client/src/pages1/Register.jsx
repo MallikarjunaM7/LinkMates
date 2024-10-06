@@ -9,6 +9,7 @@ import { Navigate } from "react-router-dom";
 export const Register = () => {
 
     const navigate = useNavigate();
+    const backapi = "https://linkmates-backend.onrender.com"
 
     const {token} = useAuth()
 
@@ -46,8 +47,6 @@ export const Register = () => {
             [name]: value
         })
     }
-
-    const backapi = "http://localhost:5000"
 
     const handleChangeotp = (e) => {
         const name = e.target.name;
