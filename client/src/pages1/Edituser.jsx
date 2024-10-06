@@ -33,6 +33,7 @@ export const Edituser = () => {
                     Authorization: `Bearer ${token}`
                 }
             })
+            console.log("response", response)
             const allData = await response.json()
             console.log("all",allData)
             if(response.ok){
