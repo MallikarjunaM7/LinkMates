@@ -7,7 +7,7 @@ export const Followers = () => {
 
     const {data, token} = useAuth()
     const [followers, setFollowers] = useState([])
-    const backapi = "const backapi = "https://linkmates-backend.onrender.com""
+    const backapi = "https://linkmates-backend.onrender.com"
 
     useEffect(() => {
         if(data.username){
