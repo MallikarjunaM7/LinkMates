@@ -13,7 +13,7 @@ export const AuthProvider = ({children}) => {
         localStorage.setItem("token", token)
     }
 
-    const backapi = "http://localhost:5000"
+    const backapi = "https://linkmates-backend.onrender.com"
 
     const LogoutUser = () => {
         setToken("")
